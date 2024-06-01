@@ -1,0 +1,103 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+:root {
+    --bs-body-font-family: 'Lexend', sans-serif;
+}
+
+.img-grayscale {
+    filter: grayscale(100%) contrast(100%);
+}
+
+.content-spacing {
+    padding-top: 100px;
+}
+
+.navbar-custom {
+    transition: all 0.3s ease-in-out;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.blinking-line {
+    animation: blink 0.8s infinite;
+    color: black;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skills-icon-size {
+    width: 70px;
+    height: 70px;
+}
+
+.carousel-icon-size {
+    width: 25px;
+    height: 25px;
+}
+
+.carousel-img-size {
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+#btn-cv-download {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#btn-cv-download span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+#btn-cv-download span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+#btn-cv-download span:not(hover) {
+    transition: all 1s;
+}
+// Then add additional custom code here

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- [ Header ] -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,6 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="main.css" />
     <script src="bootstrap.bundle.min.js"></script>
-
-    <style></style>
 </head>
 
 <body>
@@ -17,12 +16,12 @@
     <header class="navbar navbar-expand bg-white sticky-top shadow navbar-custom no-shadow" id="mainNavbar">
         <div class="container d-flex justify-content-center align-items-center">
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="home-link">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-me" id="about-link">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education" id="education-link">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills" id="skills-link">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects" id="projects-link">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-link">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -30,16 +29,16 @@
     <!-- [ Front ] -->
     <div class="vh-100 text-center d-flex align-items-center">
         <div class="container mb-5">
-            <button type="button" class="btn btn-secondary position-relative rounded-pill ps-3 pe-3 mb-3">
+            <button type="button" class="btn btn-sm btn-secondary rounded-pill ps-3 pe-3">
                 Hello, I am Paul Ian Jucar
             </button>
 
-            <div class="mb-5">
+            <div class="mt-3 mb-5">
                 <h1 class="display-1 fw-bold">Junior Web Developer</h1>
                 <h3 class="fw-light">Building dynamic web systems with expertise in front-end and back-end development.<span class="blinking-line">|</span></h3>
             </div>
 
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-md-4 mt-3">
                     <h5>Total Projects</h5>
                     <h2>5</h2>
@@ -56,11 +55,17 @@
                     <span>till the end?</span>
                 </div>
             </div>
+
+            <button id="btn-cv-download">
+                <span>Download CV</span>
+            </button>
+
+
         </div>
     </div>
 
     <!-- [ About Me ] -->
-    <div class="container space" id="about-me">
+    <div class="container content-spacing" id="about-me">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-7">
                 <h1 class="display-3 fw-bold">About Me</h1>
@@ -84,7 +89,7 @@
     </div>
 
     <!-- [ Education ] -->
-    <div class="container space" id="education">
+    <div class="container content-spacing" id="education">
         <h1 class="display-3 fw-bold mt-5">Education</h1>
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -129,89 +134,89 @@
     </div>
 
     <!-- [ Skills ] -->
-    <div class="container space" id="skills">
+    <div class="container content-spacing" id="skills">
         <h1 class="display-3 fw-bold mt-5">Skills</h1>
         <ul class="list-inline m-0">
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/codeigniter 4.png" class="img-fluid grayscale" style="width: 70px; height: 70px;">
+                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale skills-icon-size">
                     <small class="d-block mt-3">Codeigniter 4</small>
                 </div>
             </li>
             
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/php.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/php.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">PHP</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/js.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/js.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">JavaScript</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/html.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/html.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">HTML</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/css.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/css.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">CSS</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/bootstrap.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/bootstrap.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">Bootstrap</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/vscode.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/vscode.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">VSCode</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/github.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/github.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">Github</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/xampp.png" class="img-fluid grayscale" style="width: 70px; height: 70px;">
+                    <img src="img/xampp.png" class="img-fluid img-grayscale skills-icon-size">
                     <small class="d-block mt-3">XAMPP</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/mysql.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/mysql.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">MySQL</small>
                 </div>
             </li>
         
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/postman.png" class="img-fluid grayscale" style="width: 70px; height: 70px;">
+                    <img src="img/postman.png" class="img-fluid img-grayscale skills-icon-size">
                     <small class="d-block mt-3">Postman</small>
                 </div>
             </li>
 
             <li class="list-inline-item mb-3 border p-2">
                 <div class="text-center">
-                    <img src="img/java.svg" class="img-fluid" style="width: 70px; height: 70px;">
+                    <img src="img/java.svg" class="img-fluid skills-icon-size">
                     <small class="d-block mt-3">Java</small>
                 </div>
             </li>
@@ -219,11 +224,11 @@
     </div>
 
     <!-- [ Projects ] -->
-    <div class="container space" id="projects">
+    <div class="container content-spacing" id="projects">
         <h1 class="display-3 fw-bold mt-5">Projects</h1>
         <div class="row">
             <!-- [ Queuing System ] -->
-            <div class="col-md-12 col-lg-12 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         <div id="carouselproject5" class="carousel carousel-dark slide">
@@ -245,50 +250,50 @@
                                 <button type="button" data-bs-target="#carouselproject5" data-bs-slide-to="14" aria-label="Slide 15"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img src="img/project5/2.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-item active" data-bs-interval="1000">
+                                    <img src="img/project5/2.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/3.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/3.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/5.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/5.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/6.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/6.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/7.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/7.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/8.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/8.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/9.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/9.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/10.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/10.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/11.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/11.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/12.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/12.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/13.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/13.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/14.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/14.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/15.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/15.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/16.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/16.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project5/1.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project5/1.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselproject5" data-bs-slide="prev">
@@ -305,32 +310,32 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/codeigniter 4.png" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/php.svg" class="img-fluid grayscale" data-toggle="tooltip" data-placement="bottom" title="PHP" style="width: 25px; height: 25px;">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/mysql.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/html.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/css.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/js.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                         </ul>
@@ -341,7 +346,7 @@
             </div>
 
             <!-- [ Classroom Scheduler and Finder: Faculty Loading System ] -->
-            <div class="col-md-12 col-lg-6 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         <div id="carouselproject1" class="carousel carousel-dark slide">
@@ -364,49 +369,49 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="img/project1/1.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project1/1.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="img/project1/2.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/3.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="img/project1/2.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/4.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/3.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/5.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/4.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/6.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/5.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/7.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/6.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/8.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/7.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/9.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/8.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/10.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/9.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/11.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/10.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/12.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/11.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/13.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/12.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/14.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/13.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project1/15.jpg" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project1/14.jpg" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project1/15.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselproject1" data-bs-slide="prev">
@@ -423,33 +428,32 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/codeigniter 4.png" class="img-fluid grayscale"
-                                        style="width: 25px; height: 25px;">
+                                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/php.svg" class="img-fluid grayscale" data-toggle="tooltip" data-placement="bottom" title="PHP" style="width: 25px; height: 25px;">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/mysql.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/html.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/css.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/js.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                         </ul>
@@ -459,8 +463,120 @@
                 </div>
             </div>
 
+            <!-- [ ID Scanner Project ] -->
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div id="carouselproject6" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="0" class="active"aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                <button type="button" data-bs-target="#carouselproject6" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1000">
+                                    <img src="img/project6/1.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="img/project6/2.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/3.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/5.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/6.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/7.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/8.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/9.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/10.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/11.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/12.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project6/13.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselproject6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselproject6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center">
+                                    <img src="img/qr-code.png" class="img-fluid carousel-icon-size">
+                                </div>
+                            </li>
+                        </ul>
+                        <h3 class="mb-0">ID Scanner Project</h3>
+                        <small><i>Date Finished: January 2024</i></small>
+                    </div>
+                </div>
+            </div>
+
             <!-- [ Laboratory Management ] -->
-            <div class="col-md-12 col-lg-6 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         <div id="carouselproject2" class="carousel carousel-dark slide">
@@ -482,46 +598,46 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="img/project2/1.png" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project2/1.png" class="d-block mx-auto carousel-img-size">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="img/project2/2.png" class="d-block mx-auto" alt="..." style="height: 300px;">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/3.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="img/project2/2.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/4.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/3.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/5.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/4.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/6.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/5.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/7.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/6.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/8.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/7.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/9.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/8.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/10.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/9.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/11.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/10.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/12.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/11.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/13.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/12.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project2/14.png" class="d-block mx-auto" alt="..." style="height: 300px; ">
+                                    <img src="img/project2/13.png" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project2/14.png" class="d-block mx-auto carousel-img-size">
                                 </div>
                             </div>
 
@@ -539,32 +655,32 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/codeigniter 4.png" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/php.svg" class="img-fluid grayscale" data-toggle="tooltip" data-placement="bottom" title="PHP" style="width: 25px; height: 25px;">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/mysql.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/html.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/css.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/js.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                         </ul>
@@ -576,7 +692,7 @@
             </div>
 
             <!-- [ Humidity and Temparature System ] -->
-            <div class="col-md-12 col-lg-6 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         <div id="carouselproject3" class="carousel carousel-dark slide">
@@ -587,13 +703,13 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="img/project3/1.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project3/1.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="img/project3/2.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="img/project3/2.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project3/3.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project3/3.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselproject3" data-bs-slide="prev">
@@ -610,38 +726,37 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/arduino.png" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/arduino.png" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/codeigniter 4.png" class="img-fluid grayscale"
-                                        style="width: 25px; height: 25px;">
+                                    <img src="img/codeigniter 4.png" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/php.svg" class="img-fluid grayscale" data-toggle="tooltip" data-placement="bottom" title="PHP" style="width: 25px; height: 25px;">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/mysql.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/html.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/css.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/js.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                         </ul>
@@ -653,7 +768,7 @@
             </div>
 
             <!-- [ Ticketing System ] -->
-            <div class="col-md-12 col-lg-6 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         <div id="carouselproject4" class="carousel carousel-dark slide">
@@ -668,25 +783,25 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="img/project4/1.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project4/1.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="img/project4/2.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project4/3.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="img/project4/2.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project4/4.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project4/3.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project4/5.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project4/4.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project4/6.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project4/5.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="img/project4/7.jpg" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                    <img src="img/project4/6.jpg" class="d-block mx-auto carousel-img-size">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="img/project4/7.jpg" class="d-block mx-auto carousel-img-size">
                                 </div>
                             </div>
 
@@ -704,27 +819,27 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/php.svg" class="img-fluid grayscale" data-toggle="tooltip" data-placement="bottom" title="PHP" style="width: 25px; height: 25px;">
+                                    <img src="img/php.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/mysql.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/mysql.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/html.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/html.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/css.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/css.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="text-center">
-                                    <img src="img/js.svg" class="img-fluid grayscale" style="width: 25px; height: 25px;">
+                                    <img src="img/js.svg" class="img-fluid img-grayscale carousel-icon-size">
                                 </div>
                             </li>
                         </ul>
@@ -738,7 +853,7 @@
     </div>
 
     <!-- [ Contact Me ] -->
-    <div class="container space" id="contact">
+    <div class="container content-spacing" id="contact">
         <h1 class="display-3 fw-bold">Contact Me</h1>
         <div class="row">
             <div class="col-md-12 col-lg-6 mb-3 mt-3">
@@ -762,7 +877,7 @@
                     </a>
                     <div class="text-left">
                         <small>Linked In</small>
-                        <a href="#" class="text-black  text-decoration-none" target="_blank">
+                        <a href="https://www.linkedin.com/in/paul-ian-jucar-b2111b301/" class="text-black  text-decoration-none" target="_blank">
                             <h5>Paul Ian Jucar</h5>
                         </a>
                     </div>
@@ -776,7 +891,7 @@
                     </a>
                     <div class="text-left">
                         <small>Google Mail</small>
-                        <a href="https://mail.google.com/mail/u/0/#compose" class="text-black  text-decoration-none" target="_blank">
+                        <a href="mailto: paulianjucar2020@gmail.com" class="text-black  text-decoration-none" target="_blank">
                             <h5>paulianjucar2020@gmail.com</h5>
                         </a>
                     </div>
@@ -801,6 +916,7 @@
     </div>
 </body>
 
+<!-- [ Footer ] -->
 <footer class="footer mt-5 pt-5 pb-5 py-3 bg-dark">
     <div class="container fw-light">
         <div class="row">
@@ -820,6 +936,7 @@
 </footer>
 
 <script>
+    // [ Navbar Scroll Shadow ]
     window.addEventListener('scroll', function () {
         var navbar = document.getElementById('mainNavbar');
         if (window.scrollY === 0) {
@@ -829,10 +946,18 @@
         }
     });
 
+    // [ Tooltip ]
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    document.getElementById('btn-cv-download').addEventListener('click', function () {
+        var link = document.createElement('a');
+        link.href = 'img/files/Resume - Print.pdf';
+        link.setAttribute('download', 'Resume - Print.pdf');
+        link.click();
+    });
 </script>
 
 </html>
