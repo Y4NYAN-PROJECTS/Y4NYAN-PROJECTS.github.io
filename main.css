@@ -12013,10 +12013,7 @@ textarea.form-control-lg {
 }
 
 .carousel-img-size {
-  max-width: 100%;
-  max-height: 300px;
-  min-height: 300px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
