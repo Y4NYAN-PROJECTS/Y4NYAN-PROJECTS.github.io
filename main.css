@@ -12053,3 +12053,9 @@ textarea.form-control-lg {
 #btn-cv-download span:not(hover) {
   transition: all 1s;
 }
+
+.pulse:hover {
+  animation: pulse;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
