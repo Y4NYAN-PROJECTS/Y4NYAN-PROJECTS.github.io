@@ -25,6 +25,24 @@
   <link rel="stylesheet" href="assets/css/style-preset.css">
   <script src="assets/js/tech-stack.js"></script>
   <link rel="stylesheet" href="assets/css/landing.css" />
+
+  <style>
+    .carousel-inner,
+    .carousel-item {
+      height: 300px;
+      overflow: hidden;
+    }
+  
+    .carousel-item img {
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
 </head>
 
 <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast="" data-pc-theme="light" class="landing-page">
@@ -35,6 +53,7 @@
     </div>
   </div>
 
+  <!-- [ Header ] -->
   <header id="home" style="background-image: url(../assets/images/landing/img-headerbg.jpg)">
     <!-- [ Top Navigation ] -->
     <nav class="navbar navbar-expand-md navbar-light default">
@@ -54,7 +73,7 @@
             </li>
   
             <li class="nav-item px-1">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
   
             <li class="nav-item px-1">
@@ -87,7 +106,6 @@
       </div>
     </div>
   </header>
-  <!-- [ Header ] End -->
 
   <!-- [ Why Choose Us ] -->
   <section class="bg-white" id="why-choose-us">
@@ -131,6 +149,24 @@
             </div>
           </div>
         </div>
+
+        <!-- Carousel -->
+        <div id="autoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets/images/custom/carousel_1.jpg" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/images/custom/carousel_2.jpeg" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/images/custom/carousel_3.jpg" class="d-block w-100" alt="Banner 3">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/images/custom/carousel_4.jpeg" class="d-block w-100" alt="Banner 3">
+            </div>
+          </div>
+          </div>
       </div>
     </div>
   </section>
@@ -204,6 +240,7 @@
       </div>
   </section>
 
+  <!-- [ Mission and Vision ] -->
   <section class="bg-white" id="mission-and-vision">
     <div class="container title">
       <div class="row justify-content-center text-center wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
@@ -333,9 +370,8 @@
     </div>
   </footer>
 
-  <!-- [ Main Content ] end -->
+  <!-- [ Script/s ] -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <!-- Required Js -->
   <script src="assets/js/plugins/popper.min.js"></script>
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
