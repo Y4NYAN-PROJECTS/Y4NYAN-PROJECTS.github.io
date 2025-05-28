@@ -56,9 +56,13 @@
     height: 25px;
 }
 
+.carousel-item {
+    height: 300px;
+}
+
 .carousel-img-size {
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 #btn-cv-download {

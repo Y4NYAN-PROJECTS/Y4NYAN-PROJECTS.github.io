@@ -12012,9 +12012,14 @@ textarea.form-control-lg {
   height: 25px;
 }
 
+.carousel-item {
+  height: 300px;
+}
+
 .carousel-img-size {
   width: 100%;
-  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #btn-cv-download {
